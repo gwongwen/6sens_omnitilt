@@ -1,7 +1,7 @@
 # 6Sens: inSitu Seismic System for Slope Stability Sensing
 
 ## Desciption
-The goal is to develop a warning system on the analysis of the evolution of the micro-seismic activity generated before the instability is triggered.  The method uses a multitude of low-cost seismic sensors deployed in-situ in a network over the possibly unstable zone. The goal is to characterize the temporal evolution of seismic signals detected simultaneously by several sensors (i .e., co-detection). This method uses to its advantage the heterogeneity of the materials and the attenuation of the waves during their propagation in the material.
+The goal is to develop a warning system on the analysis of the evolution of the micro-seismic activity generated before the instability is triggered. The method uses a multitude of low-cost seismic sensors deployed in-situ in a network over the possibly unstable zone. The goal is to characterize the temporal evolution of seismic signals detected simultaneously by several sensors (i .e., co-detection). This method uses to its advantage the heterogeneity of the materials and the attenuation of the waves during their propagation in the material.
 
 The design of these sensors is subject to certain technical constraints essential to good
 operation of the project:
@@ -13,13 +13,8 @@ operation of the project:
     - Be produced at low cost (to install a large-scale network, and have the possibility of to install sensors in hazardous areas with the possibility of losing them).
 
 ## Hardware description
+### Geophone Sensor
 
+### Amplifier/Filter board
 
-
-## OS configuration
-
-### Download
-
-## Initialisation and process
-
-After that, clone this repository and go to the **/0-configuration/* folder and read the **README_CONF.md** document.
+### CPU/Radio board
