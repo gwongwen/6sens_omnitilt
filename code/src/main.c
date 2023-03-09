@@ -1,5 +1,6 @@
 #include <zephyr.h>
+#include <ads1110.h>
 
-void main(void)
+int main(void)
 {
 }
