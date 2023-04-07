@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "penguino_v1")(type "KiCad")(uri "${KIPRJMOD}/librairies/lib_Penguino/penguino_v1.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,135 @@
+
+(rules PCB GS-One_IoT_board
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1184)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 152.6)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 38.2 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:400_um-3V3" "Via[0-1]_600:400_um" 3V3
+  )
+  (via 
+    "Via[0-1]_800:400_um-3V3" "Via[0-1]_800:400_um" 3V3
+  )
+  (via 
+    "Via[0-1]_600:400_um-GND" "Via[0-1]_600:400_um" GND
+  )
+  (via 
+    "Via[0-1]_800:400_um-GND" "Via[0-1]_800:400_um" GND
+  )
+  (via_rule
+    default "Via[0-1]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (via_rule
+    3V3 "Via[0-1]_800:400_um-3V3"
+  )
+  (via_rule
+    GND "Via[0-1]_800:400_um-GND"
+  )
+  (class default
+    "unconnected-(board1-Pad19)" "Net-(C2-Pad1)" "Net-(C2-Pad2)" "Net-(C3-Pad1)" "Net-(C3-Pad2)" "Net-(C4-Pad2)" "Net-(C5-Pad1)" "Net-(C6-Pad1)"
+    "Net-(C7-Pad1)" "Net-(C7-Pad2)" "Net-(C8-Pad1)" "Net-(C9-Pad1)" "Net-(R12-Pad2)" "unconnected-(board1-Pad1)" "unconnected-(board1-Pad3)" "unconnected-(board1-Pad5)"
+    "unconnected-(board1-Pad6)" "unconnected-(board1-Pad7)" "unconnected-(board1-Pad8)" "unconnected-(board1-Pad9)" "unconnected-(board1-Pad10)" "unconnected-(board1-Pad11)" "unconnected-(board1-Pad12)" "unconnected-(board1-Pad13)"
+    "unconnected-(board1-Pad14)" "unconnected-(board1-Pad15)" "unconnected-(board1-Pad16)" "unconnected-(board1-Pad17)" "unconnected-(board1-Pad18)" "PB13_ADC0" "unconnected-(board1-Pad20)" "unconnected-(board1-Pad21)"
+    "unconnected-(board1-Pad22)" "unconnected-(board1-Pad23)" "Net-(C1-Pad1)" "unconnected-(board1-Pad25)" "unconnected-(board1-Pad26)" "unconnected-(board1-Pad27)" "unconnected-(board1-Pad28)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 3V3
+    3V3
+    (clearance_class 3V3)
+    (via_rule 3V3)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
