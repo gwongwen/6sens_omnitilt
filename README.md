@@ -23,5 +23,7 @@ For more information, please to refer to : https://www.geospace.com/products/sen
 ### Amplifier/Filter board
 
 
-### CPU/Radio board
+### CPU/Radio board for test
 The choice fell on Cicerone MKR main board. Move-X Cicerone LoRa/GNSS Board is a high-performance, low-power, Arduino MKR-compatible development board based on the MAMWLE LoRa Module and the u-blox MAX-M10S GNSS Module. The Cicerone Board delivers best-in-class GNSS, long-range wireless connection, and high-performance MCU processing in a low-power solution for optimal battery life. The Cicerone Board allows users to build tracking applications worldwide with meter-level accuracy and to communicate long-range, low-power data via LoRaWAN. The integrated Li-Po charging circuit enables the Cicerone Board to manage battery charging through the USB port.
+
+### CPU/Radio board for POC
