@@ -1,0 +1,41 @@
+<Qucs Schematic 0.0.19>
+<Properties>
+  <View=-3,-10,1537,942,0.963235,0,0>
+  <Grid=10,10,0>
+  <DataSet=amplifier_1.dat>
+  <DataDisplay=amplifier_1.sch>
+  <OpenDisplay=1>
+  <Script=amplifier_1.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 80 860 620 390 3 #c0c0c0 1 10 1 1 1 1000 1 -13.1293 10 46.6355 1 -1 0.2 1 315 0 225 "frequency [Hz]" "gain of low pass filter (LP:720Hz) [dB]" "">
+	<"gain_lp_720Hz" #0000ff 0 3 0 0 0>
+	  <Mkr 720.28 458 -299 3 0 0>
+  </Rect>
+  <Rect 870 420 620 390 3 #c0c0c0 1 10 1 1 1 1000 1 -18.0037 2 1.26158 1 -1 0.2 1 315 0 225 "frequency [Hz]" "gain of high pass (HP: 4Hz) [dB]" "">
+	<"gain_hp_4Hz" #0000ff 0 3 0 0 0>
+	  <Mkr 134.866 474 -381 3 0 0>
+  </Rect>
+  <Rect 870 860 620 390 3 #c0c0c0 1 10 1 1 1 1000 1 -158 2 -142 1 -1 0.2 1 315 0 225 "frequency [Hz]" "gain of low pass filter (LP: 154Hz) [dB]" "">
+	<"gain_lp_154Hz" #0000ff 0 3 0 0 0>
+	  <Mkr 154.846 376 -251 3 0 0>
+  </Rect>
+  <Rect 80 420 620 390 3 #c0c0c0 1 10 1 1 1 1000 1 -24.8435 10 31.6383 1 -1 0.2 1 315 0 225 "frequency [Hz]" "gain of sensor [dB]" "">
+	<"gain_omni" #0000ff 0 3 0 0 0>
+	  <Mkr 490.51 406 -337 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
