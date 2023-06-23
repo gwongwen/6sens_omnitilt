@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2023
+ * Regis Rousseau, INSA Lyon, CITI Lab.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 #ifndef __NVS__H
 #define __NVS__H
 

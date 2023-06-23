@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2023
+ * Regis Rousseau, INSA Lyon, CITI Lab.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 #include <inttypes.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -13,6 +20,7 @@
 #include <zephyr/device.h>
 #include <zephyr/devicetree.h>
 #include <zephyr/drivers/adc.h>
+#include <zephyr/drivers/sensor.h>
 #include <zephyr/drivers/flash.h>
 
 #include "app_sensor.h"
@@ -52,6 +60,10 @@ int main(void)
     uint16_t gsone_val;
 	uint16_t gsone_max_val = 1000; //to do 
     uint16_t payload[2];
+
+	struct sensor_value bat_val;
+	int rc;
+	const struct device *const bat_dev = DEVICE_DT_GET_ONE(st_stm32_vbat);
 
     const struct device *lora_dev;
 	struct lorawan_join_config join_cfg;
@@ -109,12 +121,31 @@ int main(void)
 
 	app_sensor_init();
 	nvs_initialise(&fs);
+
 	LOG_INF("Sending data...");
 
-	while (1) {
-            gsone_val = app_sensor_read();
-            payload[0] = gsone_val >> 8;
-            payload[1] = gsone_val;
+	if (!device_is_ready(bat_dev)) {
+		printk("VBAT sensor is not ready\n");
+		return;
+	}
+
+	do {
+        gsone_val = app_sensor_read();
+        payload[0] = gsone_val >> 8;
+        payload[1] = gsone_val;
+
+		/* fetch sensor samples */
+		rc = sensor_sample_fetch(bat_dev);
+		if (rc) {
+			printk("Failed to fetch sample (%d)\n", rc);
+			return;
+		}
+
+		rc = sensor_channel_get(bat_dev, SENSOR_CHAN_VOLTAGE, &bat_val);
+		if (rc) {
+			printk("Failed to get data (%d)\n", rc);
+			return;
+		}
 
 		if (gsone_val > gsone_max_val) {
 
@@ -139,5 +170,7 @@ int main(void)
 		}
 		k_sleep(DELAY);
 	}
-	return 0;
+	while (sensor_value_to_double(&bat_val) > 1.2);
+
+return 0;
 }

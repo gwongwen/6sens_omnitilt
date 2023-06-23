@@ -5,7 +5,14 @@
 
 / {
 	zephyr,user {
-		io-channels = <&adc1 13>;
+		io-channels = <&adc1 13 >;
+	};
+
+	stm32_vbat: stm32vbat {
+    compatible = "st,stm32-vbat";
+    io-channels = <&adc1 14>;
+    ratio = <3>;
+    status = "okay";
 	};
 };
 
@@ -24,6 +31,11 @@
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
 	};
+};
+
+&adc1 {
+    vref-mv = <3000>;
+    status = "okay";
 };
 
 

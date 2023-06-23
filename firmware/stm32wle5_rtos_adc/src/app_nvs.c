@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2023
+ * Regis Rousseau, INSA Lyon, CITI Lab.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
