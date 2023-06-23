@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2023
+ * Regis Rousseau, INSA Lyon, CITI Lab.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 /* configuration of ADC for geophone sensor */
 /* adjust channel number according to pinmux in board.dts */
 /* see datasheet Pinout Config pg 56/149 */
@@ -39,6 +46,16 @@
 &adc1 {
     vref-mv = <3000>;
     status = "okay";
+};
+
+/* config of BME280 sensor (temperature and Humidity) on i2c bus */
+/* address 0x77 --> Address Chip Select on high level (VDD) */
+&i2c1 {
+	status = "okay";
+	bme280@77 {
+		compatible = "bosch,bme280";
+		reg = <0x77>;
+	};
 };
 
 
