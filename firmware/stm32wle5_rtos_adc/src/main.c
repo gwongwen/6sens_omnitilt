@@ -170,7 +170,7 @@ int main(void)
 		}
 		k_sleep(DELAY);
 	}
-	while (sensor_value_to_double(&bat_val) > 1.2);
+	while (3*sensor_value_to_double(&bat_val) > 1.2);
 
 return 0;
 }
