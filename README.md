@@ -33,3 +33,6 @@ The choice fell on Cicerone MKR main board. Move-X Cicerone LoRa/GNSS Board is a
 
 ### CPU/Radio board for POC
 The choice was made to manufacture our own PCB. It has three parts: the MAMWLE-01 radio chipset to transmit LoRaWAN packets (based on an STM32WLE5jx), a UWB chipset DW1000 to measure distance between two sensors and an analog part to supply radio chipset (solar panel or/and Li-Po battery). Connectors (Arduino MKR-compatible) have also been added to insert the seismic sensor amplification/filtering board.
+
+## Firmware description
+For this project, the use of Zephyr RTOS has been retained. To see what is Zephyr RTOS and how to install it on your computer, go to https://docs.zephyrproject.org/latest/develop/getting_started/index.html (it supports Linux OS, Windos OS and macOS).
