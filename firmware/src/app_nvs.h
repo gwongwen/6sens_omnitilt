@@ -28,5 +28,6 @@
 
 int8_t app_nvs_init(struct nvs_fs *fs);
 int8_t app_nvs_init_param(struct nvs_fs *fs, uint16_t id, void *data);
+int8_t app_nvs_init(struct nvs_fs *fs);
 
 #endif /* APP_NVS_H */

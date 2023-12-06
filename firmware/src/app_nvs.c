@@ -6,6 +6,7 @@
  */
 
 #include "app_nvs.h"
+#include "app_lorawan.h"
 
 int8_t app_nvs_init(struct nvs_fs *fs)
 {
@@ -53,5 +54,57 @@ int8_t app_nvs_init_param(struct nvs_fs *fs, uint16_t id, void *data)
 		printk("no address found, adding %s at id %d\n", data, id);
 		(void)nvs_write(fs, id, data, sizeof(data));	
 	}
+	return 0;
+}
+
+int8_t app_nvs_handler(struct nvs_fs *fs, const struct device *dev)
+{
+	int8_t ret;
+	uint32_t val;
+	uint8_t dev_eui[] = LORAWAN_DEV_EUI;
+
+	struct payload_form {
+		uint8_t id;
+		char *bat;
+		int32_t bat_val;
+		char *temp;
+		int32_t temp_val;
+		char *press;
+		int32_t press_val;
+		char *hum;
+		int32_t hum_val;
+	};
+	
+	struct payload_form payload;
+	payload.id = dev_eui;
+	payload.bat = "B";
+	payload.temp = "T";
+	payload.press = "P";
+	payload.hum = "H";
+
+	/* 1 sample per 15min -> 96 samples per a day */
+	for (int8_t i = 0; i < 95; i++) {
+		ret = nvs_read(&fs, NVS_STM32_VBAT_ID, &val, sizeof(val));
+		payload.bat_val = val;
+		ret = nvs_read(&fs, NVS_BME280_TEMP_ID, &val, sizeof(val));
+		payload.temp_val = val;
+		ret = nvs_read(&fs, NVS_BME280_PRES_ID, &val, sizeof(val));
+		payload.press_val = val;
+		ret = nvs_read(&fs, NVS_BME280_HUM_ID, &val, sizeof(val));
+		payload.hum_val = val;
+	
+		ret = lora_send(dev, (uint8_t *)&payload, sizeof(payload), LORAWAN_MSG_UNCONFIRMED);
+		if (ret < 0) {
+			printk("LoRa send failed\n");
+			return 0;
+		}
+		k_sleep(K_MSEC(5000));
+	}
+
+	(void)nvs_delete(&fs, NVS_STM32_VBAT_ID);
+	(void)nvs_delete(&fs, NVS_BME280_TEMP_ID);
+    (void)nvs_delete(&fs, NVS_BME280_PRES_ID);
+    (void)nvs_delete(&fs, NVS_BME280_HUM_ID);
+
 	return 0;
 }
