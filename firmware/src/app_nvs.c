@@ -10,12 +10,14 @@
 int8_t app_nvs_init(struct nvs_fs *fs)
 {
 	struct flash_pages_info info;
-	int ret;
+	int8_t ret;
 
 	fs->flash_device = NVS_PARTITION_DEVICE;
 	if (!device_is_ready(fs->flash_device)) {
 		printk("flash device %s is not ready\n", fs->flash_device->name);
 		return 0;
+	} else {
+		printk("- found device: \"%s\", getting nvs memory\n", fs->flash_device->name);
 	}
 
 	fs->offset = NVS_PARTITION_OFFSET;
@@ -28,7 +30,7 @@ int8_t app_nvs_init(struct nvs_fs *fs)
 	fs->sector_size = info.size;
 	if (!fs->sector_size || fs->sector_size % info.size) {
 		printk("invalid sector size\n");
-		return -EINVAL;
+		return 0;
 	}
 
 	fs->sector_count = 2U;
@@ -37,22 +39,12 @@ int8_t app_nvs_init(struct nvs_fs *fs)
 		printk("flash init failed. error: %d\n", ret);
 		return 0;
 	}
-
-#ifdef NVS_CLEAR
-	ret = nvs_clear(fs);
-	if (ret) {
-		printk("flash clear failed. error: %d\n", ret);
-		return 0;
-	} else {
-		printk("cleared NVS from flash\n");
-	}
-#endif
 	return 0;
 }
 
 int8_t app_nvs_init_param(struct nvs_fs *fs, uint16_t id, void *data)
 {
-	int ret;
+	int8_t ret;
 
 	ret = nvs_read(fs, id, data, sizeof(data));
 	if (ret > 0) {

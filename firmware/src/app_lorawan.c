@@ -8,6 +8,8 @@
 #include "app_lorawan.h"
 #include "app_nvs.h"
 
+#define OTAA
+#define DELAY K_MSEC(5000)
 
 // downlink callback
 static void dl_callback(uint8_t port, bool data_pending, int16_t rssi, int8_t snr, uint8_t len, const uint8_t *data)
@@ -29,15 +31,22 @@ uint8_t app_lorawan_init(const struct device *dev)
     static struct nvs_fs fs;
 	
 	struct lorawan_join_config join_cfg;
-	uint16_t dev_nonce = 0;
-	uint32_t random = 0;
+	uint16_t dev_nonce = 0u;
 
-	uint8_t dev_eui[] = LORAWAN_DEV_EUI;
-	uint8_t join_eui[] = LORAWAN_JOIN_EUI;
-	uint8_t app_key[] = LORAWAN_APP_KEY;
+#ifdef OTAA
+	uint8_t dev_eui[] 	= LORAWAN_DEV_EUI;
+	uint8_t join_eui[]	= LORAWAN_JOIN_EUI;
+	uint8_t app_key[]	= LORAWAN_APP_KEY;
+#endif
+
+#ifdef ABP
+    uint8_t dev_addr[] = LORAWAN_DEV_ADDR;
+    uint8_t nwk_skey[] = LORAWAN_NWK_SKEY;
+    uint8_t app_skey[] = LORAWAN_APP_SKEY;
+    uint8_t app_eui[]  = LORAWAN_APP_EUI;
+#endif
 
     int8_t ret = 0;
-    ssize_t err = 0;
 	int8_t itr = 1;
 
     app_nvs_init(&fs);
@@ -68,46 +77,62 @@ uint8_t app_lorawan_init(const struct device *dev)
 	lorawan_register_downlink_callback(&downlink_cb);
 	lorawan_register_dr_changed_callback(lorwan_datarate_changed);
 
-	//random = sys_rand32_get();
-	//dev_nonce = random & 0x0000FFFF;
-
+#ifdef OTAA
 	join_cfg.mode = LORAWAN_ACT_OTAA;
 	join_cfg.dev_eui = dev_eui;
 	join_cfg.otaa.join_eui = join_eui;
 	join_cfg.otaa.app_key = app_key;
 	join_cfg.otaa.nwk_key = app_key;
 	join_cfg.otaa.dev_nonce = dev_nonce;
+#endif
 
+#ifdef ABP
+    join_cfg.mode = LORAWAN_ACT_ABP;
+    join_cfg.dev_eui = dev_addr;
+    join_cfg.abp.dev_addr = dev_addr;
+    join_cfg.abp.app_skey = app_skey;
+    join_cfg.abp.nwk_skey = nwk_skey;
+    join_cfg.abp.app_eui  = app_eui;
+#endif
+
+#ifdef OTAA
 	do {
 		printk("joining network using OTAA, dev nonce %d, attempt %d\n", join_cfg.otaa.dev_nonce, itr++);
+		ret = lorawan_set_class(LORAWAN_CLASS_A);
 		ret = lorawan_join(&join_cfg);
 		if (ret < 0) {
-			if ((ret =-ETIMEDOUT)) {
-				printk("timed-out waiting for response.\n");
+			if (ret = -ETIMEDOUT) {
+				printk("timed-out waiting for response\n");
 			} else {
-				printk("join failed. error: %d\n", ret);
+				printk("join network failed. error: %d\n", ret);
 			}
 		} else {
 			printk("join successful.\n");
 		}
 
 		dev_nonce++;
-		//random = sys_rand32_get();
-		//dev_nonce = random & 0x0000FFFF;
 		join_cfg.otaa.dev_nonce = dev_nonce;
-
-		// save value away in Non-Volatile Storage.
-		err = nvs_write(&fs, NVS_DEVNONCE_ID, &dev_nonce, sizeof(dev_nonce));
-		if (err < 0) {
-			printk("NVS: failed to write id %d (%d)\n", NVS_DEVNONCE_ID, err);
-		}
+		(void)nvs_write(&fs, NVS_DEVNONCE_ID, &dev_nonce, sizeof(dev_nonce));
 
 		if (ret < 0) {
 			// If failed, wait before re-trying.
-			k_sleep(K_MSEC(5000));
+			k_sleep(DELAY);
 		}
 	} while (ret != 0);
-    return 0;
+#endif
+
+#ifdef ABP
+	do {
+		ret = lorawan_join(&join_cfg);
+		if (ret < 0) {
+			printk("join network failed. error: %d\n", ret);
+			k_sleep(DELAY);
+		} else {
+			printk("join successful\n");
+		}
+	} while (ret != 0);
+#endif
+	return 0;
 }
 
 time_t app_lorawan_get_time(const struct device *dev)
@@ -124,13 +149,7 @@ time_t app_lorawan_get_time(const struct device *dev)
 		printk("%s: device not ready\n", dev->name);
 		return 0;
 	}
-
-    ret = lorawan_start();
-	if (ret < 0) {
-		printk("lorawan_start failed. error: %d\n", ret);
-		return 0;
-	}
-
+	
     lorawan_clock_sync_run();
     ret = lorawan_clock_sync_get(&gps_time);
 	if (ret != 0) { 

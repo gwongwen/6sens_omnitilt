@@ -15,7 +15,6 @@
 		io-channels = <&adc1 13>;
 		io-channels-names = "SENSOR";
 	};
-
 	aliases {
 		rtc = &rtc;
 	};
@@ -24,10 +23,10 @@
 /* internal ADC channnel of STM32, Px14 - see datasheet ADC part pg 42/149 */
 
 	stm32_vbat: stm32vbat {
-    compatible = "st,stm32-vbat";
-    io-channels = <&adc1 14>;
-    ratio = <3>;
-    status = "okay";
+    	compatible = "st,stm32-vbat";
+    	io-channels = <&adc1 14>;
+    	ratio = <3>;
+    	status = "okay";
 	};
 };
 
@@ -45,13 +44,18 @@
 &adc1 {
 	#address-cells = <1>;
 	#size-cells = <0>;
-
-	vref-mv = <3300>;
 	status = "okay";
 	channel@13 {
 		reg = <13>;
 		zephyr,gain = "ADC_GAIN_1";
 		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+	channel@14 {
+		reg = <14>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_VDD_1";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
 	};
