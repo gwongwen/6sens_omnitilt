@@ -20,12 +20,11 @@
 
 void nvs_work_handler(struct k_work *work_nvs)
 {
-	static struct nvs_fs *fs_dev;
-	const struct device *lora_dev;
+	const struct device *lora_dev = NULL;
 
 	printk("NVS handler called\n");
 
-	app_nvs_handler(fs_dev, lora_dev);
+	app_nvs_handler(lora_dev);
 }
 K_WORK_DEFINE(nvs_work, nvs_work_handler);
 
@@ -77,8 +76,7 @@ void adc_work_handler(struct k_work *work_adc)
 			buffer[i] = raw_val >> 8;
 			buffer[i+1] = raw_val;
 		}
-
-		ret = lora_send(lora_dev, &payload, sizeof(payload), LORAWAN_MSG_UNCONFIRMED);
+		ret = lorawan_send(lora_dev, &payload, sizeof(payload), LORAWAN_MSG_UNCONFIRMED);
 		if (ret < 0) {
 			printk("LoRa send failed\n");
 			return 0;
@@ -101,18 +99,18 @@ int main(void)
 	const struct device *bme280_dev = NULL;
 	const struct device *lora_dev = NULL;
 
-/*	app_nvs_init(&fs);
+	app_nvs_init(&fs);
 	app_rtc_init(timer_rtc_dev);
 	app_vbat_init(bat_dev);
 	app_bme280_init(bme280_dev);
 	app_adc_init();
 	printk("\n");
-*/
-	app_lorawan_init(lora_dev);
-	time_t get_time = app_lorawan_get_time(lora_dev);
+
+//	app_lorawan_init(lora_dev);
+//	time_t get_time = app_lorawan_get_time(lora_dev);
 	
-//	k_timer_start(&adc_timer, K_MSEC(1000), K_MSEC(1000));
-//	k_timer_start(&nvs_timer, K_MSEC(20000), K_MSEC(20000));
-//	k_timer_start(&bpth_timer, K_MSEC(30000), K_MSEC(30000));
+	k_timer_start(&adc_timer, K_MSEC(5), K_MSEC(5));
+	k_timer_start(&btph_timer, K_MSEC(5000), K_MSEC(5000));
+	k_timer_start(&nvs_timer, K_MSEC(5000*48), K_MSEC(5000*48));
 	return 0;
 }
