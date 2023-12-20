@@ -53,7 +53,7 @@ int8_t app_rtc_handler(const struct device *dev)
         printk("counter value: %d\n\r", *ticks);
         printk("current time: %02d:%02d:%02d\n\r", ttm.tm_hour, ttm.tm_min, ttm.tm_sec);
     } 
-    (void)nvs_write(&fs, NVS_TIMER_RTC_ID, &ttm, sizeof(ttm));
+ //   (void)nvs_write(&fs, NVS_TIMER_RTC_ID, &ttm, sizeof(ttm));
     return 0;
 }
 

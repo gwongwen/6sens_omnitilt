@@ -6,6 +6,8 @@
  */
 
 #include "app_nvs.h"
+#include "app_vbat.h"
+#include "app_bme280.h"
 #include "app_lorawan.h"
 
 int8_t app_nvs_init(struct nvs_fs *fs)
@@ -57,33 +59,27 @@ int8_t app_nvs_init_param(struct nvs_fs *fs, uint16_t id, void *data)
 	return 0;
 }
 
-int8_t app_nvs_handler(const struct device *dev)
+int8_t app_nvs_bat_handler(const struct device *dev)
 {
 	int8_t ret;
-	uint32_t val;
+	uint8_t val[BAT_BUFFER_SIZE];
 	uint8_t dev_eui[] = LORAWAN_DEV_EUI;
+	char dev_bat[] = {'B', 'A', 'T'};
 	static struct nvs_fs fs;
 
-	struct payload_form {
+	struct payload_config {
 		uint8_t id;
-		char *bat;
-		int32_t bat_val;
-		char *bme280;
-		int32_t bme280_val;
+		char bat;
+		uint8_t bat_val;
 	};
-	
-	struct payload_form payload;
+	struct payload_config payload;
 	payload.id = dev_eui;
-	payload.bat = "B";
-	payload.bme280 = "TPH";
+	payload.bat = dev_bat;
 
 	ret = nvs_read(&fs, NVS_STM32_VBAT_ID, &val, sizeof(val));
 	payload.bat_val = val;
 
-	ret = nvs_read(&fs, NVS_BME280_ID, &val, sizeof(val));
-	payload.bme280_val = val;
-	
-	ret = lorawan_send(dev, (uint8_t *)&payload, sizeof(payload), LORAWAN_MSG_UNCONFIRMED);
+	ret = lorawan_send(dev, &payload, sizeof(payload), LORAWAN_MSG_UNCONFIRMED);
 	if (ret < 0) {
 		printk("LoRa send failed\n");
 		return 0;
@@ -91,6 +87,36 @@ int8_t app_nvs_handler(const struct device *dev)
 	k_sleep(K_MSEC(5000));
 
 	(void)nvs_delete(&fs, NVS_STM32_VBAT_ID);
+	return 0;
+}
+
+int8_t app_nvs_tph_handler(const struct device *dev)
+{
+	int8_t ret;
+	uint16_t val[TPH_BUFFER_SIZE];
+	uint8_t dev_eui[] = LORAWAN_DEV_EUI;
+	char dev_tph[] = {'T', 'P', 'H'};
+	static struct nvs_fs fs;
+
+	struct payload_config {
+		uint8_t id;
+		char tph;
+		uint16_t tph_val;
+	};
+	struct payload_config payload;
+	payload.id = dev_eui;
+	payload.tph = dev_tph;
+
+	ret = nvs_read(&fs, NVS_BME280_ID, &val, sizeof(val));
+	payload.tph_val = val;
+
+	ret = lorawan_send(dev, (uint8_t *)&payload, sizeof(payload), LORAWAN_MSG_UNCONFIRMED);
+	if (ret < 0) {
+		printk("LoRa send failed\n");
+		return 0;
+	}
+	k_sleep(K_MSEC(5000));
+
 	(void)nvs_delete(&fs, NVS_BME280_ID);
 	return 0;
 }

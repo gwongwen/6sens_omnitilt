@@ -13,6 +13,9 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/drivers/sensor.h>
 
+#define TPH_BUFFER_SIZE     3*2*24  // 1 sample per 60 min per sensor
+                                    //  samples in uint16 format
+
 int8_t app_bme280_init(const struct device *dev);
 int8_t app_bme280_handler(const struct device *dev);
 

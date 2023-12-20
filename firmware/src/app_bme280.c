@@ -8,6 +8,7 @@
  #include "app_bme280.h"
  #include "app_nvs.h"
  
+int8_t tph_isr_cur_ind;		// index used by Interrupt Service Routine
 
 int8_t app_bme280_init(const struct device *dev)
 {
@@ -25,6 +26,7 @@ int8_t app_bme280_init(const struct device *dev)
 	} else {
         printk("- found device: \"%s\", getting bme280 data\n", dev->name);
     }
+    tph_isr_cur_ind = 0;
     (void)nvs_delete(&fs, NVS_BME280_ID);
     return 0;
 }
@@ -35,45 +37,44 @@ int8_t app_bme280_handler(const struct device *dev)
     struct sensor_value temp;
     struct sensor_value press;
     struct sensor_value hum;
-    struct sensor_value bpth;
     int8_t ret;
-    int32_t bme280_sp[8*97];
+    uint8_t val_mv[TPH_BUFFER_SIZE];
 
-    /* 1 sample per 30min -> 48 samples per a day */
-    for (int8_t i = 0; i < 49; i = i+6) {
-        
-        dev = DEVICE_DT_GET_ANY(bosch_bme280);
-        ret = sensor_sample_fetch(dev);
-        if (ret < 0 && ret != -EBADMSG) { 
-	        printk("bme280 device sample is not up to date. error: %d\n", ret);
-	        return 0;
-        }
-
-	    ret = sensor_channel_get(dev, SENSOR_CHAN_AMBIENT_TEMP, &temp);
-        if (ret < 0) {
-            printk("can't read sensor channels. error: %d\n", ret);
-	        return 0;
-        }
-
-        ret = sensor_channel_get(dev, SENSOR_CHAN_PRESS, &press);
-        if (ret < 0) {
-            printk("can't read sensor channels. error: %d\n", ret);
-	        return 0;
-        }
-   
-	    ret = sensor_channel_get(dev, SENSOR_CHAN_HUMIDITY, &hum);
-        if (ret < 0) {
-            printk("can't read sensor channels. error: %d\n", ret);
-	        return 0;
-        }
-        printk("- temp: %d.%6d degC; press = %d.%6d kpa; hum: %d.%6d percent\n", temp.val1, temp.val2, press.val1, press.val2, hum.val1, hum.val2);
-        bme280_sp[i] = temp.val1;
-        bme280_sp[i+1] = temp.val2;
-        bme280_sp[i+2] = press.val1;
-        bme280_sp[i+3] = press.val2;
-        bme280_sp[i+4] = hum.val1;
-        bme280_sp[i+5] = hum.val2;
+    dev = DEVICE_DT_GET_ANY(bosch_bme280);
+    ret = sensor_sample_fetch(dev);
+    if (ret < 0 && ret != -EBADMSG) { 
+	    printk("bme280 device sample is not up to date. error: %d\n", ret);
+	    return 0;
     }
-    (void)nvs_write(&fs, NVS_BME280_ID, &bme280_sp, sizeof(bme280_sp));
+
+	ret = sensor_channel_get(dev, SENSOR_CHAN_AMBIENT_TEMP, &temp);
+    if (ret < 0) {
+        printk("can't read sensor channels. error: %d\n", ret);
+	    return 0;
+    }
+
+    ret = sensor_channel_get(dev, SENSOR_CHAN_PRESS, &press);
+    if (ret < 0) {
+        printk("can't read sensor channels. error: %d\n", ret);
+	    return 0;
+    }
+   
+	ret = sensor_channel_get(dev, SENSOR_CHAN_HUMIDITY, &hum);
+    if (ret < 0) {
+        printk("can't read sensor channels. error: %d\n", ret);
+	    return 0;
+    }
+    printk("- %s, tempx: %d.%2d degC; press = %d.%2d kpa; hum: %d.%2d percent\n", dev->name, temp.val1, temp.val2, press.val1, press.val2, hum.val1, hum.val2);
+
+    if (tph_isr_cur_ind < TPH_BUFFER_SIZE) {
+        val_mv[tph_isr_cur_ind] = (sensor_value_to_milli(&temp)/10) >> 8;
+        val_mv[tph_isr_cur_ind+1] = (sensor_value_to_milli(&temp)/10);
+        val_mv[tph_isr_cur_ind+2] = (sensor_value_to_milli(&press)/10) >> 8;
+        val_mv[tph_isr_cur_ind+3] = (sensor_value_to_milli(&press)/10);
+        val_mv[tph_isr_cur_ind+4] = (sensor_value_to_milli(&hum)/10) >> 8;
+        val_mv[tph_isr_cur_ind+5] = (sensor_value_to_milli(&hum)/10);
+
+    }
+    (void)nvs_write(&fs, NVS_BME280_ID, &val_mv, sizeof(val_mv));
     return 0;
 }
