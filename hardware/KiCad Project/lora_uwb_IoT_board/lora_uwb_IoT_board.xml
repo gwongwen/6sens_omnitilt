@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/gwongwen/Documents/KiCad/projects/STM32WL_DW1000_IoT_board/STM32WL_DW1000_IoT_board.kicad_sch</source>
+    <date>2024 January 16, Tuesday 16:29:32</date>
+    <tool>Eeschema (6.0.0-0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>STM32WL_DW1000_IoT_board.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>LoRa_UWB.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>solar_panel.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="MK1">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_2.7mm</footprint>
+      <libsource lib="EuroCard160mmX100mm_holes" part="Mounting_Hole_PAD-Mechanical" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="STM32WL_DW1000_IoT_board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005a6cfed2</tstamps>
+    </comp>
+    <comp ref="MK2">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_2.7mm</footprint>
+      <libsource lib="EuroCard160mmX100mm_holes" part="Mounting_Hole_PAD-Mechanical" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="STM32WL_DW1000_IoT_board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005a6cff98</tstamps>
+    </comp>
+    <comp ref="MK3">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_2.7mm</footprint>
+      <libsource lib="EuroCard160mmX100mm_holes" part="Mounting_Hole_PAD-Mechanical" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="STM32WL_DW1000_IoT_board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005a6cfffa</tstamps>
+    </comp>
+    <comp ref="MK4">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_2.7mm</footprint>
+      <libsource lib="EuroCard160mmX100mm_holes" part="Mounting_Hole_PAD-Mechanical" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="STM32WL_DW1000_IoT_board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005a6d003f</tstamps>
+    </comp>
+    <comp ref="U300">
+      <value>Feather-Generic</value>
+      <footprint>penguino_v1:Feather-Generic-no-holes</footprint>
+      <fields>
+        <field name="LCSC_Part#"/>
+        <field name="MPN"/>
+      </fields>
+      <libsource lib="Penguino-STM32WL-M-rescue" part="Feather-Generic-my-Arduino-Boards-TLM-4260-breakout-v1_0-rescue-TinyLoRa-4260-breakout-v1_0-rescue-TinyLoRa-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1-rescue-Penguino-STM32WL-rescue-Penguino-STM32WL-MAMWLE-rescue" description=""/>
+      <property name="MPN" value="~"/>
+      <property name="LCSC_Part#" value="~"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="STM32WL_DW1000_IoT_board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e285ba45-a3d7-4f10-bdcf-71583df39868</tstamps>
+    </comp>
+    <comp ref="C200">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>bacfaae7-5bdc-46b2-bb76-6c66c978cab9</tstamps>
+    </comp>
+    <comp ref="C201">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>bccffb67-5705-4013-85b9-0f18d8febf49</tstamps>
+    </comp>
+    <comp ref="C202">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>e2822120-6e16-4c56-832f-4f95572d1c17</tstamps>
+    </comp>
+    <comp ref="C203">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>eabc3b7f-1b15-4649-9fd7-0d30c61a48ac</tstamps>
+    </comp>
+    <comp ref="C204">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>e7d6baf5-9b24-4e51-aecf-3a188adbc2f4</tstamps>
+    </comp>
+    <comp ref="C205">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>857b00d9-c3f8-4aa9-bb5b-f3e52b1b8a91</tstamps>
+    </comp>
+    <comp ref="C206">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>1e76e709-c004-40dd-8503-cb68cd799e1c</tstamps>
+    </comp>
+    <comp ref="D200">
+      <value>RX-GREEN</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">LTST-C191KGKT</field>
+        <field name="Manufacturer">Lite-On Inc</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="LTST-C191KGKT"/>
+      <property name="Manufacturer" value="Lite-On Inc"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>72552ffe-488b-497e-9845-4c5d3a126d6b</tstamps>
+    </comp>
+    <comp ref="D201">
+      <value>TX-BLUE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">LTST-C191TBKT</field>
+        <field name="Manufacturer">Lite-On Inc</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="LTST-C191TBKT"/>
+      <property name="Manufacturer" value="Lite-On Inc"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>fd2fe3c0-7350-4edb-8129-d49a4c6d402a</tstamps>
+    </comp>
+    <comp ref="J200">
+      <value>Conn_ARM_JTAG_SWD_10</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD</footprint>
+      <datasheet>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</datasheet>
+      <fields>
+        <field name="MPN">20021121-00010C4LF</field>
+        <field name="Manufacturer">Amphenol ICC</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_ARM_JTAG_SWD_10" description="Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"/>
+      <property name="MPN" value="20021121-00010C4LF"/>
+      <property name="Manufacturer" value="Amphenol ICC"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>109a1b0f-dbb9-4c65-bd6f-1a4199a1fc6b</tstamps>
+    </comp>
+    <comp ref="R200">
+      <value>1k5</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071K5L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="MPN" value="RC0402JR-071K5L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>71260173-3a9c-4d49-9118-bc72bea2cd48</tstamps>
+    </comp>
+    <comp ref="R201">
+      <value>1K5</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071K5L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="MPN" value="RC0402JR-071K5L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>146984bf-c755-4688-a4a6-f61725db0ab7</tstamps>
+    </comp>
+    <comp ref="R202">
+      <value>1K5</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071K5L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="MPN" value="RC0402JR-071K5L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>d0bf8628-6ac6-4d5c-94de-20bc4fd51d38</tstamps>
+    </comp>
+    <comp ref="R203">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-07100KL</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402JR-07100KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>d45785f9-bd46-47e6-a9cb-b9703c42736b</tstamps>
+    </comp>
+    <comp ref="R204">
+      <value>5K1</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-075K1L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>800f677e-c5f0-4ab6-9fcd-94208380f510</tstamps>
+    </comp>
+    <comp ref="R205">
+      <value>5K1</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-075K1L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>1995940e-fe75-4ec6-b847-20286da9ddb3</tstamps>
+    </comp>
+    <comp ref="SW200">
+      <value>RESET</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816</footprint>
+      <fields>
+        <field name="MPN">434133025816</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <property name="MPN" value="434133025816"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>1c885dcb-2dbe-489b-95f7-4cf2d7f515a3</tstamps>
+    </comp>
+    <comp ref="SW201">
+      <value>BOOTO</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816</footprint>
+      <fields>
+        <field name="MPN">434133025816</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <property name="MPN" value="434133025816"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>c36ca0cb-76a9-491e-b0ab-fd3df622ad4c</tstamps>
+    </comp>
+    <comp ref="U200">
+      <value>DWM1000</value>
+      <footprint>RF_Module:DWM1000</footprint>
+      <datasheet>https://www.decawave.com/sites/default/files/resources/dwm1000-datasheet-v1.3.pdf</datasheet>
+      <fields>
+        <field name="MPN">DWM1000</field>
+        <field name="Manufacturer">Qorvo</field>
+      </fields>
+      <libsource lib="RF_Module" part="DWM1000" description="Ultra wide band RF module With ranging location capabilities"/>
+      <property name="MPN" value="DWM1000"/>
+      <property name="Manufacturer" value="Qorvo"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>0006b0fa-14d6-4e9d-ab9e-33a37073308f</tstamps>
+    </comp>
+    <comp ref="U201">
+      <value>MAMWLExx</value>
+      <footprint>MAMWLExx:MAMWLExx</footprint>
+      <fields>
+        <field name="MPN">MAMWLE-01</field>
+        <field name="Manufacturer">Move-X</field>
+      </fields>
+      <libsource lib="stm32wl-lib-v1" part="MAMWLExx" description="Low Power Radio Module with M4/M0+ Core, 128Kbyte Flash, 48Kbyte RAM"/>
+      <property name="MPN" value="MAMWLE-01"/>
+      <property name="Manufacturer" value="Move-X"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>f2d24d2e-5b88-46ca-8bfa-84fdaf49b802</tstamps>
+    </comp>
+    <comp ref="U202">
+      <value>CH340E</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.mpja.com/download/35227cpdata.pdf</datasheet>
+      <fields>
+        <field name="MPN">COM-16278</field>
+        <field name="Manufacturer">Sparkfun Electronics</field>
+      </fields>
+      <libsource lib="Interface_USB" part="CH340E" description="USB serial converter, UART, MSOP-10"/>
+      <property name="MPN" value="COM-16278"/>
+      <property name="Manufacturer" value="Sparkfun Electronics"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>8cc4f613-cdce-4eda-92d7-69c9233f7b9a</tstamps>
+    </comp>
+    <comp ref="U203">
+      <value>BME280</value>
+      <footprint>Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering</footprint>
+      <datasheet>https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf</datasheet>
+      <fields>
+        <field name="MPN">828-1063-2-ND</field>
+        <field name="Manufacturer">Bosch Sensortec</field>
+      </fields>
+      <libsource lib="Sensor" part="BME280" description="3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"/>
+      <property name="MPN" value="828-1063-2-ND"/>
+      <property name="Manufacturer" value="Bosch Sensortec"/>
+      <property name="Sheetname" value="STM32WL-MAMWLE-C1"/>
+      <property name="Sheetfile" value="LoRa_UWB.kicad_sch"/>
+      <sheetpath names="/STM32WL-MAMWLE-C1/" tstamps="/53dea780-81c2-40e5-9b36-722b265ebea7/"/>
+      <tstamps>7bf85f04-6e5b-400e-9368-5bc01436f5aa</tstamps>
+    </comp>
+    <comp ref="C100">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>e3cf8d21-411c-4ab6-8b24-05cb8d47c281</tstamps>
+    </comp>
+    <comp ref="C101">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRT188C81A106ME13J</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRT188C81A106ME13J"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>75f6e635-3bf0-4e68-934c-f731f411961f</tstamps>
+    </comp>
+    <comp ref="C102">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>197cb086-840b-4bd0-93a1-128300b3bc88</tstamps>
+    </comp>
+    <comp ref="C103">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRT188C81A106ME13J</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfg">-</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfg" value="-"/>
+      <property name="MPN" value="GRT188C81A106ME13J"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>16e2ed41-cfb0-4577-9375-116601ee738c</tstamps>
+    </comp>
+    <comp ref="C104">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRT188C81A106ME13J</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfg">-</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfg" value="-"/>
+      <property name="MPN" value="GRT188C81A106ME13J"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>18c968b0-e1a4-40bb-8ff2-e91350fe27e3</tstamps>
+    </comp>
+    <comp ref="C105">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A103KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A103KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>21ed0bbf-367d-46cf-88e5-710ed1e21d8d</tstamps>
+    </comp>
+    <comp ref="C106">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="LCSC_Part#">Murata Electronics</field>
+        <field name="MPN">GRM155R61A103KA01D</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A103KA01D"/>
+      <property name="LCSC_Part#" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>42d1a272-b19c-4cf6-8052-a20efa3fbcc1</tstamps>
+    </comp>
+    <comp ref="C107">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R61A104KA01D</field>
+        <field name="Manufacturer">Murata Electronics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R61A104KA01D"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>4c83f35a-5dd8-4138-bbb0-0317938d8a38</tstamps>
+    </comp>
+    <comp ref="D100">
+      <value>PWR-RED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">LTST-C191KRKT</field>
+        <field name="Manufacturer">Lite-On Inc</field>
+        <field name="Mfg">-</field>
+      </fields>
+      <libsource lib="Device" part="LED_ALT" description=""/>
+      <property name="Mfg" value="-"/>
+      <property name="MPN" value="LTST-C191KRKT"/>
+      <property name="Manufacturer" value="Lite-On Inc"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>7c42aeee-a045-4289-93d1-1c1b316b9327</tstamps>
+    </comp>
+    <comp ref="D101">
+      <value>CH_ORANGE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">LTST-C191KFKT</field>
+        <field name="Manufacturer">Lite-On Inc</field>
+        <field name="Mfg">-</field>
+      </fields>
+      <libsource lib="Device" part="LED_ALT" description=""/>
+      <property name="Mfg" value="-"/>
+      <property name="MPN" value="LTST-C191KFKT"/>
+      <property name="Manufacturer" value="Lite-On Inc"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>6218db22-2f79-45cc-8639-884ce99517d0</tstamps>
+    </comp>
+    <comp ref="D102">
+      <value>SS14</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="MPN">SS14</field>
+        <field name="Manufacturer">Onsemi</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS14"/>
+      <property name="Manufacturer" value="Onsemi"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>9d7e9fe7-731b-4747-8585-0be509aadeb1</tstamps>
+    </comp>
+    <comp ref="D103">
+      <value>SS14</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="MPN">SS14</field>
+        <field name="Manufacturer">Onsemi</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS14"/>
+      <property name="Manufacturer" value="Onsemi"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>20c3224e-dfcd-4952-b4b1-f91c100ccf8f</tstamps>
+    </comp>
+    <comp ref="D104">
+      <value>B5819W</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
+      <fields>
+        <field name="MPN">B5819W</field>
+        <field name="Manufacturer">Yangjie Electronic Technology</field>
+      </fields>
+      <libsource lib="Diode" part="MBR0520" description="20V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="MPN" value="B5819W"/>
+      <property name="Manufacturer" value="Yangjie Electronic Technology"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>c9971fa2-94dc-480f-8263-11985eef0b05</tstamps>
+    </comp>
+    <comp ref="D105">
+      <value>NUP2202</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+      <datasheet>http://www.onsemi.ru.com/pub_link/Collateral/NUP2202W1-D.PDF</datasheet>
+      <fields>
+        <field name="MPN">NUP2202W1T2G</field>
+        <field name="Manufacturer">Onsemi</field>
+      </fields>
+      <libsource lib="Power_Protection" part="NUP2202" description="Transient voltage suppressor designed to protect high speed data lines from ESD, EFT, and lightning"/>
+      <property name="MPN" value="NUP2202W1T2G"/>
+      <property name="Manufacturer" value="Onsemi"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>7dad2358-4248-43cc-a88f-fa49e75d731f</tstamps>
+    </comp>
+    <comp ref="F101">
+      <value>0.75A</value>
+      <footprint>Fuse:Fuse_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">SMD0805B075TF</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="MPN" value="SMD0805B075TF"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>c61bdb3e-62ba-4f18-9688-410a1ffbab7a</tstamps>
+    </comp>
+    <comp ref="FB100">
+      <value>PZ1608D221-1R0TF</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">HPZ1608D221-1R2TF</field>
+        <field name="Manufacturer">Shenzhen Sunlord Electronics</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description=""/>
+      <property name="MPN" value="HPZ1608D221-1R2TF"/>
+      <property name="Manufacturer" value="Shenzhen Sunlord Electronics"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>55579dc1-3d0d-4eb2-8793-58c76aac00f2</tstamps>
+    </comp>
+    <comp ref="J100">
+      <value>JST_PH</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">S2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST Sales America Inc</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="S2B-PH-SM4-TB(LF)(SN)"/>
+      <property name="Manufacturer" value="JST Sales America Inc"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>d959bc76-02a5-403c-8607-f685566f7728</tstamps>
+    </comp>
+    <comp ref="J101">
+      <value>JST_PH</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">S2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST Sales America Inc</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="S2B-PH-SM4-TB(LF)(SN)"/>
+      <property name="Manufacturer" value="JST Sales America Inc"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>42195d4e-bd02-4d5c-a8b3-15c4a5d53d4b</tstamps>
+    </comp>
+    <comp ref="J102">
+      <value>USB_C_Receptacle_USB2.0</value>
+      <footprint>Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="MPN">12401598E4#2A</field>
+        <field name="Manufacturer">Amphenol ICC</field>
+      </fields>
+      <libsource lib="Penguino-STM32WL-M-rescue" part="USB_C_Receptacle_USB2.0-Connector" description=""/>
+      <property name="MPN" value="12401598E4#2A"/>
+      <property name="Manufacturer" value="Amphenol ICC"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>e30738d3-4808-4e3b-959a-f86e5e7fb166</tstamps>
+    </comp>
+    <comp ref="Q100">
+      <value>SI2323DS</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">SI2323DS-T1-GE3</field>
+        <field name="Manufacturer">Vishay Siliconix</field>
+      </fields>
+      <libsource lib="Device" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="MPN" value="SI2323DS-T1-GE3"/>
+      <property name="Manufacturer" value="Vishay Siliconix"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>e44d1ac3-7cce-4197-84b9-90a98633de2a</tstamps>
+    </comp>
+    <comp ref="R100">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071ML</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402JR-071ML"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>ef6f3bfa-2855-443e-ac62-fbda5af76fae</tstamps>
+    </comp>
+    <comp ref="R101">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071ML</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402JR-071ML"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>0642294a-b972-4be9-a61d-ffb328f302f5</tstamps>
+    </comp>
+    <comp ref="R102">
+      <value>1K5</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071K5L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402JR-071K5L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>3d14f846-c813-47f1-9103-4c9189eeba46</tstamps>
+    </comp>
+    <comp ref="R103">
+      <value>1K5</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071K5L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402JR-071K5L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>4e50e619-6c40-4223-93ae-db2b72da8b66</tstamps>
+    </comp>
+    <comp ref="R104">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-074K7L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402JR-074K7L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>6c7708a0-64b2-4be3-91ad-df607c009721</tstamps>
+    </comp>
+    <comp ref="R105">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-07100KL</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402JR-07100KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>b1b44932-204b-4379-a0fc-1ae3c40ac006</tstamps>
+    </comp>
+    <comp ref="R106">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-071ML</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Mfg">-</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Mfg" value="-"/>
+      <property name="MPN" value="RC0402JR-071ML"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>f6f67127-aac2-4673-96bf-0549c2ec7590</tstamps>
+    </comp>
+    <comp ref="R107">
+      <value>5K1</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-075K1L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>e200a278-6ea0-4161-a2a9-9bfa492a216f</tstamps>
+    </comp>
+    <comp ref="R108">
+      <value>5K1</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-075K1L</field>
+        <field name="Manufacturer">Yageo</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0402FR-075K1L"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>78284afa-d113-42f4-a7d4-2c42991a3e9b</tstamps>
+    </comp>
+    <comp ref="U100">
+      <value>TPS3809K33D</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.ti.com/lit/ds/sbvs193d/sbvs193d.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPS3809K33DBVRG4</field>
+        <field name="Manufacturer">Texas Instrument</field>
+      </fields>
+      <libsource lib="Power_Supervisor" part="TPS3839DBZ" description="150-nA, Ultralow Power, Supply Voltage Monitor, SOT-23"/>
+      <property name="MPN" value="TPS3809K33DBVRG4"/>
+      <property name="Manufacturer" value="Texas Instrument"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>612f93ec-b6fd-4af4-9f12-e71e163305bd</tstamps>
+    </comp>
+    <comp ref="U101">
+      <value>MCP73831</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</datasheet>
+      <fields>
+        <field name="MPN">MCP73831T-2ACI/OT</field>
+        <field name="Manufacturer">Microchip Technology</field>
+      </fields>
+      <libsource lib="Battery_Management" part="MCP73831-2-OT" description="Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package"/>
+      <property name="MPN" value="MCP73831T-2ACI/OT"/>
+      <property name="Manufacturer" value="Microchip Technology"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>f7e2c15b-67d5-471e-973b-1f9d0f337c52</tstamps>
+    </comp>
+    <comp ref="U102">
+      <value>RT9078-33GJ5</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-5</footprint>
+      <datasheet>https://ru.mouser.com/datasheet/2/308/NCV8114-D-1107616.pdf</datasheet>
+      <fields>
+        <field name="MPN">RT9078-33GJ5</field>
+        <field name="Manufacturer">Richtek USA Inc</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="NCV8114ASN120T1G" description="300mA, Low Noise, Linear Regulator with output active discharge function, 1.7-5.5V input voltage range, 1.2V fixed positive output, TSOT-23-5"/>
+      <property name="MPN" value="RT9078-33GJ5"/>
+      <property name="Manufacturer" value="Richtek USA Inc"/>
+      <property name="Sheetname" value="Solar Panel Charger"/>
+      <property name="Sheetfile" value="solar_panel.kicad_sch"/>
+      <sheetpath names="/Solar Panel Charger/" tstamps="/8e57f1ed-4fdc-40e7-86e9-a650b10500ba/"/>
+      <tstamps>f8bfbe4d-664a-4bf7-ac8f-3c61c4365f82</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Battery_Management" part="MCP73831-2-OT">
+      <description>Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831-2-OT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_ARM_JTAG_SWD_10">
+      <description>Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</description>
+      <docs>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</docs>
+      <footprints>
+        <fp>PinHeader?2x05?P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_ARM_JTAG_SWD_10</field>
+        <field name="Datasheet">http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VTref" type="power_in"/>
+        <pin num="2" name="SWDIO/TMS" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="SWDCLK/TCK" type="output"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="SWO/TDO" type="input"/>
+        <pin num="7" name="KEY" type="no_connect"/>
+        <pin num="8" name="NC/TDI" type="output"/>
+        <pin num="9" name="GNDDetect" type="passive"/>
+        <pin num="10" name="~{RESET}" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead">
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Device_Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_ALT">
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Device_LED_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Polyfuse">
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_PMOS_GSD">
+      <description>P-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="MBR0520">
+      <description>20V 0.5A Schottky Power Rectifier Diode, SOD-123</description>
+      <docs>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</docs>
+      <footprints>
+        <fp>D*SOD?123*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MBR0520</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EuroCard160mmX100mm_holes" part="Mounting_Hole_PAD-Mechanical">
+      <footprints>
+        <fp>Mounting?Hole*</fp>
+        <fp>Hole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">Mounting_Hole_PAD-Mechanical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_USB" part="CH340E">
+      <description>USB serial converter, UART, MSOP-10</description>
+      <docs>https://www.mpja.com/download/35227cpdata.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CH340E</field>
+        <field name="Footprint">Package_SO:MSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.mpja.com/download/35227cpdata.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="UD+" type="bidirectional"/>
+        <pin num="2" name="UD-" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="~{RTS}" type="output"/>
+        <pin num="5" name="~{CTS}" type="input"/>
+        <pin num="6" name="TNOW" type="output"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="TXD" type="output"/>
+        <pin num="9" name="RXD" type="input"/>
+        <pin num="10" name="V3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Penguino-STM32WL-M-rescue" part="Feather-Generic-my-Arduino-Boards-TLM-4260-breakout-v1_0-rescue-TinyLoRa-4260-breakout-v1_0-rescue-TinyLoRa-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1-rescue-Penguino-STM32WL-rescue-Penguino-STM32WL-MAMWLE-rescue">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Feather-Generic-my-Arduino-Boards-TLM-4260-breakout-v1_0-rescue-TinyLoRa-4260-breakout-v1_0-rescue-TinyLoRa-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1_0-rescue-Penguino-Feather-4260-v1-rescue-Penguino-STM32WL-rescue-Penguino-STM32WL-MAMWLE-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RST" type="input"/>
+        <pin num="2" name="3V" type="passive"/>
+        <pin num="3" name="" type="bidirectional"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="" type="bidirectional"/>
+        <pin num="6" name="" type="bidirectional"/>
+        <pin num="7" name="" type="bidirectional"/>
+        <pin num="8" name="" type="bidirectional"/>
+        <pin num="9" name="" type="bidirectional"/>
+        <pin num="10" name="" type="bidirectional"/>
+        <pin num="11" name="SCK" type="bidirectional"/>
+        <pin num="12" name="MOSI" type="bidirectional"/>
+        <pin num="13" name="MISO" type="bidirectional"/>
+        <pin num="14" name="Rx" type="bidirectional"/>
+        <pin num="15" name="Tx" type="bidirectional"/>
+        <pin num="16" name="GND" type="passive"/>
+        <pin num="17" name="SDA" type="bidirectional"/>
+        <pin num="18" name="SCL" type="bidirectional"/>
+        <pin num="19" name="" type="bidirectional"/>
+        <pin num="20" name="" type="bidirectional"/>
+        <pin num="21" name="" type="bidirectional"/>
+        <pin num="22" name="" type="bidirectional"/>
+        <pin num="23" name="" type="bidirectional"/>
+        <pin num="24" name="" type="bidirectional"/>
+        <pin num="25" name="" type="bidirectional"/>
+        <pin num="26" name="VBUS" type="passive"/>
+        <pin num="27" name="EN" type="input"/>
+        <pin num="28" name="VBAT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Penguino-STM32WL-M-rescue" part="USB_C_Receptacle_USB2.0-Connector">
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle_USB2.0-Connector</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="power_in"/>
+        <pin num="A4" name="VBUS" type="power_in"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Protection" part="NUP2202">
+      <description>Transient voltage suppressor designed to protect high speed data lines from ESD, EFT, and lightning</description>
+      <docs>http://www.onsemi.ru.com/pub_link/Collateral/NUP2202W1-D.PDF</docs>
+      <footprints>
+        <fp>SOT?363*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NUP2202</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-363_SC-70-6</field>
+        <field name="Datasheet">http://www.onsemi.ru.com/pub_link/Collateral/NUP2202W1-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="no_connect"/>
+        <pin num="4" name="" type="no_connect"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Supervisor" part="TPS3839DBZ">
+      <description>150-nA, Ultralow Power, Supply Voltage Monitor, SOT-23</description>
+      <docs>http://www.ti.com/lit/ds/sbvs193d/sbvs193d.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3839DBZ</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/sbvs193d/sbvs193d.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="~{RESET}" type="output"/>
+        <pin num="3" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF_Module" part="DWM1000">
+      <description>Ultra wide band RF module With ranging location capabilities</description>
+      <docs>https://www.decawave.com/sites/default/files/resources/dwm1000-datasheet-v1.3.pdf</docs>
+      <footprints>
+        <fp>*DWM1000*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">DWM</field>
+        <field name="Value">DWM1000</field>
+        <field name="Footprint">RF_Module:DWM1000</field>
+        <field name="Datasheet">https://www.decawave.com/sites/default/files/resources/dwm1000-datasheet-v1.3.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EXTON" type="output"/>
+        <pin num="2" name="WAKEUP" type="bidirectional"/>
+        <pin num="3" name="RSTn" type="bidirectional"/>
+        <pin num="4" name="GPIO7" type="bidirectional"/>
+        <pin num="5" name="VDDAON" type="power_in"/>
+        <pin num="6" name="VDD3V3" type="power_in"/>
+        <pin num="7" name="VDD3V3" type="power_in"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="GPIO6/EXTRXE/SPIHA" type="bidirectional"/>
+        <pin num="10" name="GPIO5/EXTTXE/SPIPOL" type="bidirectional"/>
+        <pin num="11" name="GPIO4/EXTPA" type="bidirectional"/>
+        <pin num="12" name="GPIO3/TXLED" type="bidirectional"/>
+        <pin num="13" name="GPIO2/RXLED" type="bidirectional"/>
+        <pin num="14" name="GPIO1/SFDLED" type="bidirectional"/>
+        <pin num="15" name="GPIO0/RXOKLED" type="bidirectional"/>
+        <pin num="16" name="VSS" type="power_in"/>
+        <pin num="17" name="SPICSn" type="input"/>
+        <pin num="18" name="SPIMOSI" type="input"/>
+        <pin num="19" name="SPIMISO" type="output"/>
+        <pin num="20" name="SPICLK" type="input"/>
+        <pin num="21" name="VSS" type="power_in"/>
+        <pin num="22" name="IRQ/GPIO8" type="bidirectional"/>
+        <pin num="23" name="VSS" type="power_in"/>
+        <pin num="24" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="NCV8114ASN120T1G">
+      <description>300mA, Low Noise, Linear Regulator with output active discharge function, 1.7-5.5V input voltage range, 1.2V fixed positive output, TSOT-23-5</description>
+      <docs>https://ru.mouser.com/datasheet/2/308/NCV8114-D-1107616.pdf</docs>
+      <footprints>
+        <fp>TSOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NCV8114ASN120T1G</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-5</field>
+        <field name="Datasheet">https://ru.mouser.com/datasheet/2/308/NCV8114-D-1107616.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor" part="BME280">
+      <description>3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8</description>
+      <docs>https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf</docs>
+      <footprints>
+        <fp>*LGA*2.5x2.5mm*P0.65mm*Clockwise*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BME280</field>
+        <field name="Footprint">Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering</field>
+        <field name="Datasheet">https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="CSB" type="input"/>
+        <pin num="3" name="SDI" type="bidirectional"/>
+        <pin num="4" name="SCK" type="input"/>
+        <pin num="5" name="SDO" type="bidirectional"/>
+        <pin num="6" name="VDDIO" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push_45deg">
+      <description>Push button switch, normally open, two pins, 45° tilted</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push_45deg</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="stm32wl-lib-v1" part="MAMWLExx">
+      <description>Low Power Radio Module with M4/M0+ Core, 128Kbyte Flash, 48Kbyte RAM</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAMWLExx</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PA6" type="passive"/>
+        <pin num="2" name="PA7" type="passive"/>
+        <pin num="3" name="BOOT0" type="passive"/>
+        <pin num="4" name="RESET" type="passive"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="PA9" type="passive"/>
+        <pin num="7" name="PC13" type="passive"/>
+        <pin num="8" name="PB11" type="passive"/>
+        <pin num="9" name="PB10" type="passive"/>
+        <pin num="10" name="PB12" type="passive"/>
+        <pin num="11" name="PB13" type="passive"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="14" name="PB1" type="passive"/>
+        <pin num="15" name="PB2" type="passive"/>
+        <pin num="16" name="PA11" type="passive"/>
+        <pin num="17" name="PA10" type="passive"/>
+        <pin num="18" name="PA12" type="passive"/>
+        <pin num="19" name="PB14" type="passive"/>
+        <pin num="20" name="VREF+" type="passive"/>
+        <pin num="21" name="GND" type="power_in"/>
+        <pin num="22" name="VDD" type="power_in"/>
+        <pin num="23" name="PA13" type="passive"/>
+        <pin num="24" name="PA14" type="passive"/>
+        <pin num="25" name="PA15" type="passive"/>
+        <pin num="26" name="PB3" type="passive"/>
+        <pin num="27" name="PB4" type="passive"/>
+        <pin num="28" name="PB5" type="passive"/>
+        <pin num="29" name="PB6" type="passive"/>
+        <pin num="30" name="PB7" type="passive"/>
+        <pin num="31" name="GND" type="power_in"/>
+        <pin num="32" name="VDD" type="power_in"/>
+        <pin num="33" name="PC1" type="passive"/>
+        <pin num="34" name="PC0" type="passive"/>
+        <pin num="35" name="PC6" type="passive"/>
+        <pin num="36" name="PA3" type="passive"/>
+        <pin num="37" name="PA2" type="passive"/>
+        <pin num="38" name="PB15" type="passive"/>
+        <pin num="39" name="PB9" type="passive"/>
+        <pin num="40" name="PB8" type="passive"/>
+        <pin num="41" name="GND" type="power_in"/>
+        <pin num="42" name="GND" type="power_in"/>
+        <pin num="43" name="GND" type="power_in"/>
+        <pin num="44" name="ANT" type="passive"/>
+        <pin num="45" name="GND" type="power_in"/>
+        <pin num="46" name="GND" type="power_in"/>
+        <pin num="47" name="PA0" type="passive"/>
+        <pin num="48" name="PC2" type="passive"/>
+        <pin num="49" name="PA8" type="passive"/>
+        <pin num="50" name="PA5" type="passive"/>
+        <pin num="51" name="PA4" type="passive"/>
+        <pin num="52" name="PA1" type="passive"/>
+        <pin num="53" name="GND-EP" type="power_in"/>
+        <pin num="54" name="GND-EP" type="power_in"/>
+        <pin num="55" name="GND-EP" type="power_in"/>
+        <pin num="56" name="GND-EP" type="power_in"/>
+        <pin num="57" name="GND-EP" type="power_in"/>
+        <pin num="58" name="GND-EP" type="power_in"/>
+        <pin num="59" name="GND-EP" type="power_in"/>
+        <pin num="60" name="GND-EP" type="power_in"/>
+        <pin num="61" name="GND-EP" type="power_in"/>
+        <pin num="62" name="GND-EP" type="power_in"/>
+        <pin num="63" name="GND-EP" type="power_in"/>
+        <pin num="64" name="GND-EP" type="power_in"/>
+        <pin num="65" name="GND-EP" type="power_in"/>
+        <pin num="66" name="GND-EP" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Battery_Management">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Battery_Management.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Diode.kicad_sym</uri>
+    </library>
+    <library logical="EuroCard160mmX100mm_holes">
+      <uri/>
+    </library>
+    <library logical="Interface_USB">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Interface_USB.kicad_sym</uri>
+    </library>
+    <library logical="Power_Protection">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Power_Protection.kicad_sym</uri>
+    </library>
+    <library logical="Power_Supervisor">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Power_Supervisor.kicad_sym</uri>
+    </library>
+    <library logical="RF_Module">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//RF_Module.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Sensor">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Sensor.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/private/var/folders/2p/244w4z5x3573cx4nmkc0qqpr0000gq/T/AppTranslocation/E67735B7-42EC-45F2-BB59-2F857C9600AB/d/KiCad.app/Contents/SharedSupport/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="stm32wl-lib-v1">
+      <uri>/Users/gwongwen/Documents/KiCad/projects/STM32WL_DW1000_IoT_board/librairies/lib_STM32WL/stm32wl-lib-v1.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C102" pin="1" pintype="passive"/>
+      <node ref="C103" pin="1" pintype="passive"/>
+      <node ref="C200" pin="1" pintype="passive"/>
+      <node ref="C202" pin="1" pintype="passive"/>
+      <node ref="C203" pin="1" pintype="passive"/>
+      <node ref="C204" pin="2" pintype="passive"/>
+      <node ref="C205" pin="2" pintype="passive"/>
+      <node ref="C206" pin="1" pintype="passive"/>
+      <node ref="D100" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J200" pin="1" pinfunction="VTref" pintype="power_in"/>
+      <node ref="R204" pin="2" pintype="passive"/>
+      <node ref="R205" pin="2" pintype="passive"/>
+      <node ref="SW201" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U102" pin="5" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U200" pin="5" pinfunction="VDDAON" pintype="power_in"/>
+      <node ref="U200" pin="6" pinfunction="VDD3V3" pintype="power_in"/>
+      <node ref="U200" pin="7" pinfunction="VDD3V3" pintype="power_in"/>
+      <node ref="U201" pin="13" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U201" pin="22" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U201" pin="32" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U202" pin="10" pinfunction="V3" pintype="passive"/>
+      <node ref="U202" pin="7" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U203" pin="2" pinfunction="CSB" pintype="input"/>
+      <node ref="U203" pin="5" pinfunction="SDO" pintype="bidirectional"/>
+      <node ref="U203" pin="6" pinfunction="VDDIO" pintype="power_in"/>
+      <node ref="U203" pin="8" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U300" pin="2" pinfunction="3V" pintype="passive"/>
+    </net>
+    <net code="2" name="+BATT">
+      <node ref="C101" pin="1" pintype="passive"/>
+      <node ref="J100" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q100" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R100" pin="1" pintype="passive"/>
+      <node ref="U101" pin="3" pinfunction="VBAT" pintype="power_out"/>
+    </net>
+    <net code="3" name="/STM32WL-MAMWLE-C1/USB_N">
+      <node ref="D105" pin="1" pintype="passive"/>
+      <node ref="J102" pin="A7" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="J102" pin="B7" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="U202" pin="2" pinfunction="UD-" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/STM32WL-MAMWLE-C1/USB_P">
+      <node ref="D105" pin="6" pintype="passive"/>
+      <node ref="J102" pin="A6" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="J102" pin="B6" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="U202" pin="1" pinfunction="UD+" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="ADC0">
+      <node ref="U201" pin="11" pinfunction="PB13" pintype="passive"/>
+      <node ref="U300" pin="24" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="BME_CLK">
+      <node ref="U201" pin="49" pinfunction="PA8" pintype="passive"/>
+    </net>
+    <net code="7" name="BME_SCL">
+      <node ref="R205" pin="1" pintype="passive"/>
+      <node ref="U201" pin="6" pinfunction="PA9" pintype="passive"/>
+      <node ref="U203" pin="4" pinfunction="SCK" pintype="input"/>
+    </net>
+    <net code="8" name="BME_SDA">
+      <node ref="R204" pin="1" pintype="passive"/>
+      <node ref="U201" pin="17" pinfunction="PA10" pintype="passive"/>
+      <node ref="U203" pin="3" pinfunction="SDI" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="BOOTO">
+      <node ref="R203" pin="1" pintype="passive"/>
+      <node ref="SW201" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U201" pin="3" pinfunction="BOOT0" pintype="passive"/>
+    </net>
+    <net code="10" name="DW_CLK">
+      <node ref="U200" pin="20" pinfunction="SPICLK" pintype="input"/>
+      <node ref="U201" pin="50" pinfunction="PA5" pintype="passive"/>
+    </net>
+    <net code="11" name="DW_CSn">
+      <node ref="U200" pin="17" pinfunction="SPICSn" pintype="input"/>
+      <node ref="U201" pin="51" pinfunction="PA4" pintype="passive"/>
+    </net>
+    <net code="12" name="DW_IRQ">
+      <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="U200" pin="22" pinfunction="IRQ/GPIO8" pintype="bidirectional"/>
+      <node ref="U201" pin="9" pinfunction="PB10" pintype="passive"/>
+    </net>
+    <net code="13" name="DW_MISO">
+      <node ref="U200" pin="19" pinfunction="SPIMISO" pintype="output"/>
+      <node ref="U201" pin="1" pinfunction="PA6" pintype="passive"/>
+    </net>
+    <net code="14" name="DW_MOSI">
+      <node ref="U200" pin="18" pinfunction="SPIMOSI" pintype="input"/>
+      <node ref="U201" pin="2" pinfunction="PA7" pintype="passive"/>
+    </net>
+    <net code="15" name="DW_RSTn">
+      <node ref="U200" pin="3" pinfunction="RSTn" pintype="bidirectional"/>
+      <node ref="U201" pin="7" pinfunction="PC13" pintype="passive"/>
+    </net>
+    <net code="16" name="DW_WAKEUP">
+      <node ref="U200" pin="2" pinfunction="WAKEUP" pintype="bidirectional"/>
+      <node ref="U201" pin="8" pinfunction="PB11" pintype="passive"/>
+    </net>
+    <net code="17" name="GND">
+      <node ref="C100" pin="1" pintype="passive"/>
+      <node ref="C101" pin="2" pintype="passive"/>
+      <node ref="C102" pin="2" pintype="passive"/>
+      <node ref="C103" pin="2" pintype="passive"/>
+      <node ref="C104" pin="2" pintype="passive"/>
+      <node ref="C105" pin="1" pintype="passive"/>
+      <node ref="C106" pin="2" pintype="passive"/>
+      <node ref="C107" pin="2" pintype="passive"/>
+      <node ref="C200" pin="2" pintype="passive"/>
+      <node ref="C201" pin="2" pintype="passive"/>
+      <node ref="C202" pin="2" pintype="passive"/>
+      <node ref="C203" pin="2" pintype="passive"/>
+      <node ref="C204" pin="1" pintype="passive"/>
+      <node ref="C205" pin="1" pintype="passive"/>
+      <node ref="C206" pin="2" pintype="passive"/>
+      <node ref="D105" pin="2" pintype="passive"/>
+      <node ref="D200" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D201" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J100" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J101" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J102" pin="A1" pinfunction="GND" pintype="power_in"/>
+      <node ref="J102" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="J102" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="J102" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="J200" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="J200" pin="5" pinfunction="GND" pintype="passive"/>
+      <node ref="J200" pin="9" pinfunction="GNDDetect" pintype="passive"/>
+      <node ref="R101" pin="2" pintype="passive"/>
+      <node ref="R102" pin="2" pintype="passive"/>
+      <node ref="R104" pin="2" pintype="passive"/>
+      <node ref="R105" pin="2" pintype="passive"/>
+      <node ref="R106" pin="1" pintype="passive"/>
+      <node ref="R106" pin="2" pintype="passive"/>
+      <node ref="R107" pin="1" pintype="passive"/>
+      <node ref="R108" pin="1" pintype="passive"/>
+      <node ref="R202" pin="2" pintype="passive"/>
+      <node ref="R203" pin="2" pintype="passive"/>
+      <node ref="SW200" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U100" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U101" pin="2" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U102" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U200" pin="16" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U200" pin="21" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U200" pin="23" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U200" pin="24" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U200" pin="8" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U201" pin="12" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="21" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="31" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="41" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="42" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="43" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="45" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="46" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U201" pin="53" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="54" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="55" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="56" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="57" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="58" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="59" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="60" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="61" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="62" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="63" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="64" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="65" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U201" pin="66" pinfunction="GND-EP" pintype="power_in"/>
+      <node ref="U202" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U203" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U203" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U300" pin="16" pinfunction="GND" pintype="passive"/>
+      <node ref="U300" pin="4" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="18" name="LDO_EN">
+      <node ref="U100" pin="2" pinfunction="~{RESET}" pintype="output"/>
+      <node ref="U102" pin="3" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="19" name="NRST">
+      <node ref="C201" pin="1" pintype="passive"/>
+      <node ref="J200" pin="10" pinfunction="~{RESET}" pintype="open_collector"/>
+      <node ref="SW200" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U201" pin="4" pinfunction="RESET" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(C105-Pad2)">
+      <node ref="C105" pin="2" pintype="passive"/>
+      <node ref="J102" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(C106-Pad1)">
+      <node ref="C106" pin="1" pintype="passive"/>
+      <node ref="FB100" pin="1" pintype="passive"/>
+      <node ref="J102" pin="A4" pinfunction="VBUS" pintype="power_in"/>
+      <node ref="J102" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J102" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J102" pin="B9" pinfunction="VBUS" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(C107-Pad1)">
+      <node ref="C107" pin="1" pintype="passive"/>
+      <node ref="F101" pin="1" pintype="passive"/>
+      <node ref="FB100" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(D100-Pad1)">
+      <node ref="D100" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R102" pin="1" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(D101-Pad1)">
+      <node ref="D101" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U101" pin="1" pinfunction="STAT" pintype="output"/>
+    </net>
+    <net code="25" name="Net-(D101-Pad2)">
+      <node ref="D101" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R103" pin="2" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(D102-Pad1)">
+      <node ref="D102" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D103" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R103" pin="1" pintype="passive"/>
+      <node ref="U101" pin="4" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="27" name="Net-(D200-Pad2)">
+      <node ref="D200" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R200" pin="2" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(D201-Pad2)">
+      <node ref="D201" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R201" pin="2" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(J102-PadA5)">
+      <node ref="J102" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
+      <node ref="R107" pin="2" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(J102-PadB5)">
+      <node ref="J102" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="R108" pin="2" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(R104-Pad1)">
+      <node ref="R104" pin="1" pintype="passive"/>
+      <node ref="U101" pin="5" pinfunction="PROG" pintype="input"/>
+    </net>
+    <net code="32" name="PA13_SWDIO">
+      <node ref="J200" pin="2" pinfunction="SWDIO/TMS" pintype="bidirectional"/>
+      <node ref="U201" pin="23" pinfunction="PA13" pintype="passive"/>
+    </net>
+    <net code="33" name="PA14_SWCLK">
+      <node ref="J200" pin="4" pinfunction="SWDCLK/TCK" pintype="output"/>
+      <node ref="U201" pin="24" pinfunction="PA14" pintype="passive"/>
+    </net>
+    <net code="34" name="PA15_JTDI">
+      <node ref="J200" pin="8" pinfunction="NC/TDI" pintype="output"/>
+      <node ref="U201" pin="25" pinfunction="PA15" pintype="passive"/>
+    </net>
+    <net code="35" name="PB3_SWO">
+      <node ref="J200" pin="6" pinfunction="SWO/TDO" pintype="input"/>
+      <node ref="U201" pin="26" pinfunction="PB3" pintype="passive"/>
+    </net>
+    <net code="36" name="PB6_TxD1">
+      <node ref="U201" pin="29" pinfunction="PB6" pintype="passive"/>
+      <node ref="U202" pin="9" pinfunction="RXD" pintype="input"/>
+    </net>
+    <net code="37" name="PB7_RxD1">
+      <node ref="U201" pin="30" pinfunction="PB7" pintype="passive"/>
+      <node ref="U202" pin="8" pinfunction="TXD" pintype="output"/>
+    </net>
+    <net code="38" name="RXLED">
+      <node ref="R201" pin="1" pintype="passive"/>
+      <node ref="U200" pin="13" pinfunction="GPIO2/RXLED" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="TXLED">
+      <node ref="R200" pin="1" pintype="passive"/>
+      <node ref="U200" pin="12" pinfunction="GPIO3/TXLED" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="VBAT">
+      <node ref="C100" pin="2" pintype="passive"/>
+      <node ref="R100" pin="2" pintype="passive"/>
+      <node ref="R101" pin="1" pintype="passive"/>
+      <node ref="U201" pin="14" pinfunction="PB1" pintype="passive"/>
+    </net>
+    <net code="41" name="VBUS">
+      <node ref="D102" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D104" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D105" pin="5" pintype="passive"/>
+      <node ref="F101" pin="2" pintype="passive"/>
+      <node ref="Q100" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R105" pin="1" pintype="passive"/>
+    </net>
+    <net code="42" name="VDC">
+      <node ref="D103" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J101" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="43" name="VDD_IN">
+      <node ref="C104" pin="1" pintype="passive"/>
+      <node ref="D104" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q100" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="U100" pin="3" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U102" pin="1" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="44" name="unconnected-(D105-Pad3)">
+      <node ref="D105" pin="3" pintype="no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(D105-Pad4)">
+      <node ref="D105" pin="4" pintype="no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(J102-PadA8)">
+      <node ref="J102" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(J102-PadB8)">
+      <node ref="J102" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(J200-Pad7)">
+      <node ref="J200" pin="7" pinfunction="KEY" pintype="no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(MK1-Pad1)">
+      <node ref="MK1" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(MK2-Pad1)">
+      <node ref="MK2" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(MK3-Pad1)">
+      <node ref="MK3" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(MK4-Pad1)">
+      <node ref="MK4" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U102-Pad4)">
+      <node ref="U102" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U200-Pad1)">
+      <node ref="U200" pin="1" pinfunction="EXTON" pintype="output"/>
+    </net>
+    <net code="55" name="unconnected-(U200-Pad4)">
+      <node ref="U200" pin="4" pinfunction="GPIO7" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="unconnected-(U200-Pad9)">
+      <node ref="U200" pin="9" pinfunction="GPIO6/EXTRXE/SPIHA" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="unconnected-(U200-Pad10)">
+      <node ref="U200" pin="10" pinfunction="GPIO5/EXTTXE/SPIPOL" pintype="bidirectional"/>
+    </net>
+    <net code="58" name="unconnected-(U200-Pad11)">
+      <node ref="U200" pin="11" pinfunction="GPIO4/EXTPA" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="unconnected-(U200-Pad14)">
+      <node ref="U200" pin="14" pinfunction="GPIO1/SFDLED" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="unconnected-(U200-Pad15)">
+      <node ref="U200" pin="15" pinfunction="GPIO0/RXOKLED" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="unconnected-(U201-Pad10)">
+      <node ref="U201" pin="10" pinfunction="PB12" pintype="passive"/>
+    </net>
+    <net code="62" name="unconnected-(U201-Pad15)">
+      <node ref="U201" pin="15" pinfunction="PB2" pintype="passive"/>
+    </net>
+    <net code="63" name="unconnected-(U201-Pad16)">
+      <node ref="U201" pin="16" pinfunction="PA11" pintype="passive"/>
+    </net>
+    <net code="64" name="unconnected-(U201-Pad18)">
+      <node ref="U201" pin="18" pinfunction="PA12" pintype="passive"/>
+    </net>
+    <net code="65" name="unconnected-(U201-Pad19)">
+      <node ref="U201" pin="19" pinfunction="PB14" pintype="passive"/>
+    </net>
+    <net code="66" name="unconnected-(U201-Pad20)">
+      <node ref="U201" pin="20" pinfunction="VREF+" pintype="passive"/>
+    </net>
+    <net code="67" name="unconnected-(U201-Pad27)">
+      <node ref="U201" pin="27" pinfunction="PB4" pintype="passive"/>
+    </net>
+    <net code="68" name="unconnected-(U201-Pad28)">
+      <node ref="U201" pin="28" pinfunction="PB5" pintype="passive"/>
+    </net>
+    <net code="69" name="unconnected-(U201-Pad33)">
+      <node ref="U201" pin="33" pinfunction="PC1" pintype="passive"/>
+    </net>
+    <net code="70" name="unconnected-(U201-Pad34)">
+      <node ref="U201" pin="34" pinfunction="PC0" pintype="passive"/>
+    </net>
+    <net code="71" name="unconnected-(U201-Pad35)">
+      <node ref="U201" pin="35" pinfunction="PC6" pintype="passive"/>
+    </net>
+    <net code="72" name="unconnected-(U201-Pad36)">
+      <node ref="U201" pin="36" pinfunction="PA3" pintype="passive"/>
+    </net>
+    <net code="73" name="unconnected-(U201-Pad37)">
+      <node ref="U201" pin="37" pinfunction="PA2" pintype="passive"/>
+    </net>
+    <net code="74" name="unconnected-(U201-Pad38)">
+      <node ref="U201" pin="38" pinfunction="PB15" pintype="passive"/>
+    </net>
+    <net code="75" name="unconnected-(U201-Pad39)">
+      <node ref="U201" pin="39" pinfunction="PB9" pintype="passive"/>
+    </net>
+    <net code="76" name="unconnected-(U201-Pad40)">
+      <node ref="U201" pin="40" pinfunction="PB8" pintype="passive"/>
+    </net>
+    <net code="77" name="unconnected-(U201-Pad44)">
+      <node ref="U201" pin="44" pinfunction="ANT" pintype="passive"/>
+    </net>
+    <net code="78" name="unconnected-(U201-Pad47)">
+      <node ref="U201" pin="47" pinfunction="PA0" pintype="passive"/>
+    </net>
+    <net code="79" name="unconnected-(U201-Pad48)">
+      <node ref="U201" pin="48" pinfunction="PC2" pintype="passive"/>
+    </net>
+    <net code="80" name="unconnected-(U201-Pad52)">
+      <node ref="U201" pin="52" pinfunction="PA1" pintype="passive"/>
+    </net>
+    <net code="81" name="unconnected-(U202-Pad4)">
+      <node ref="U202" pin="4" pinfunction="~{RTS}" pintype="output+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U202-Pad5)">
+      <node ref="U202" pin="5" pinfunction="~{CTS}" pintype="input+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(U202-Pad6)">
+      <node ref="U202" pin="6" pinfunction="TNOW" pintype="output+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(U300-Pad1)">
+      <node ref="U300" pin="1" pinfunction="RST" pintype="input"/>
+    </net>
+    <net code="85" name="unconnected-(U300-Pad3)">
+      <node ref="U300" pin="3" pintype="bidirectional"/>
+    </net>
+    <net code="86" name="unconnected-(U300-Pad5)">
+      <node ref="U300" pin="5" pintype="bidirectional"/>
+    </net>
+    <net code="87" name="unconnected-(U300-Pad6)">
+      <node ref="U300" pin="6" pintype="bidirectional"/>
+    </net>
+    <net code="88" name="unconnected-(U300-Pad7)">
+      <node ref="U300" pin="7" pintype="bidirectional"/>
+    </net>
+    <net code="89" name="unconnected-(U300-Pad8)">
+      <node ref="U300" pin="8" pintype="bidirectional"/>
+    </net>
+    <net code="90" name="unconnected-(U300-Pad9)">
+      <node ref="U300" pin="9" pintype="bidirectional"/>
+    </net>
+    <net code="91" name="unconnected-(U300-Pad10)">
+      <node ref="U300" pin="10" pintype="bidirectional"/>
+    </net>
+    <net code="92" name="unconnected-(U300-Pad11)">
+      <node ref="U300" pin="11" pinfunction="SCK" pintype="bidirectional"/>
+    </net>
+    <net code="93" name="unconnected-(U300-Pad12)">
+      <node ref="U300" pin="12" pinfunction="MOSI" pintype="bidirectional"/>
+    </net>
+    <net code="94" name="unconnected-(U300-Pad13)">
+      <node ref="U300" pin="13" pinfunction="MISO" pintype="bidirectional"/>
+    </net>
+    <net code="95" name="unconnected-(U300-Pad14)">
+      <node ref="U300" pin="14" pinfunction="Rx" pintype="bidirectional"/>
+    </net>
+    <net code="96" name="unconnected-(U300-Pad15)">
+      <node ref="U300" pin="15" pinfunction="Tx" pintype="bidirectional"/>
+    </net>
+    <net code="97" name="unconnected-(U300-Pad17)">
+      <node ref="U300" pin="17" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="98" name="unconnected-(U300-Pad18)">
+      <node ref="U300" pin="18" pinfunction="SCL" pintype="bidirectional"/>
+    </net>
+    <net code="99" name="unconnected-(U300-Pad19)">
+      <node ref="U300" pin="19" pintype="bidirectional"/>
+    </net>
+    <net code="100" name="unconnected-(U300-Pad20)">
+      <node ref="U300" pin="20" pintype="bidirectional"/>
+    </net>
+    <net code="101" name="unconnected-(U300-Pad21)">
+      <node ref="U300" pin="21" pintype="bidirectional"/>
+    </net>
+    <net code="102" name="unconnected-(U300-Pad22)">
+      <node ref="U300" pin="22" pintype="bidirectional"/>
+    </net>
+    <net code="103" name="unconnected-(U300-Pad23)">
+      <node ref="U300" pin="23" pintype="bidirectional"/>
+    </net>
+    <net code="104" name="unconnected-(U300-Pad25)">
+      <node ref="U300" pin="25" pintype="bidirectional"/>
+    </net>
+    <net code="105" name="unconnected-(U300-Pad26)">
+      <node ref="U300" pin="26" pinfunction="VBUS" pintype="passive"/>
+    </net>
+    <net code="106" name="unconnected-(U300-Pad27)">
+      <node ref="U300" pin="27" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="107" name="unconnected-(U300-Pad28)">
+      <node ref="U300" pin="28" pinfunction="VBAT" pintype="passive"/>
+    </net>
+  </nets>
+</export>

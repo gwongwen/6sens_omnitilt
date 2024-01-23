@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name "EuroCard160mmX100mm_holes")(type "KiCad")(uri "${KIPRJMOD}/EuroCard160mmX100mm_holes.kicad_sym")(options "")(descr "")(disabled))
+  (lib (name "penguino_v1")(type "Legacy")(uri "${KIPRJMOD}/librairies/lib_Penguino/penguino_v1.lib")(options "")(descr ""))
+  (lib (name "stm32wl-lib-v1")(type "Legacy")(uri "${KIPRJMOD}/librairies/lib_STM32WL/stm32wl-lib-v1.lib")(options "")(descr ""))
+  (lib (name "tps61094")(type "Legacy")(uri "${KIPRJMOD}/librairies/lib_TPS61094/tps61094.lib")(options "")(descr ""))
+  (lib (name "pgb1010402")(type "Legacy")(uri "${KIPRJMOD}/librairies/lib_PGB1010402/pgb1010402.lib")(options "")(descr ""))
+  (lib (name "sma-142-0701-851")(type "Legacy")(uri "${KIPRJMOD}/librairies/lib_sma_142_0701_851/sma_142_0701_851.lib")(options "")(descr ""))
+)
